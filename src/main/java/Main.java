@@ -1,5 +1,3 @@
-package src.main.java;
-
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -8,6 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Purchase purchase = new Purchase();
         //Liskov substitution principle, requires the objects of your subclasses to behave in the same way as the objects of your superclass.(Product)
+
         Grocery grocery = new Grocery();
         grocery.addProduct("Bread", 56);
         grocery.addProduct("Butter", 153);
@@ -16,7 +15,8 @@ public class Main {
         purchase.setСountProducts(grocery.products.size());
 
         System.out.println("IN STORE AVAILABLE");
-        //SRP: A module should be responsible to one, and only one, actor. Moved the printPurshase() method to the Purshase class
+        //SRP: A module should be responsible to one, and only one, actor. Moved the printProducts() method to the Grocery class
+        //Netology Main class L15-L17 -> Grocery class L18-L22
         grocery.printProducts();
 
 

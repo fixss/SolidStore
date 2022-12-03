@@ -1,12 +1,13 @@
-package src.main.java;
-//Open-closed Principle. Class should be extendable without modifying the class itself. (Basket)
+//Open-closed Principle.
+// Class should be extendable without modifying the class itself. (Basket)
 
 public class Purchase {
     protected String title;
     protected int count;
     Grocery Grocery = new Grocery();
     protected Purchase[] purchases;
-    // Magic Number (new Purchase[4] -> products.size())
+    // Magic Number (Netology Purchase class L6: new Purchase[4] -> products.size())
+    //Using in Main L15
 
     public void setСountProducts(int countProducts) {
         purchases = new Purchase[countProducts];
